@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- EDITAR AQUÍ: TÍTULO Y DESCRIPCIÓN PARA GOOGLE (SEO) -->
+<title>Junto a Ti | Tecnología que acompaña procesos que transforman</title>
+<meta name="description" content="Junto a Ti es una empresa colombiana de tecnología aplicada a la psicología: seguimiento emocional, actividades terapéuticas y reportes de progreso para psicólogos y consultorios en Córdoba y el Caribe.">
+<meta name="theme-color" content="#0b4a8f">
+<meta property="og:title" content="Junto a Ti">
+<meta property="og:description" content="Tecnología que acompaña procesos que transforman.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<!-- ÍCONOS (no tocar): se usan con <svg class="ic"><use href="#i-nombre"/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+ <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+ <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.3h6c0-1 .4-1.8 1-2.3A7 7 0 0 0 12 2z"/></symbol>
+ <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+ <symbol id="i-shieldok" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+ <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+ <symbol id="i-userplus" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></symbol>
+ <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+ <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+ <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+ <symbol id="i-chart" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6"/></symbol>
+ <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+ <symbol id="i-list" viewBox="0 0 24 24"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></symbol>
+ <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+ <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+ <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></symbol>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+</svg>
+
+<a href="#contenido" class="nota-pendiente" style="position:absolute;left:-999px" onfocus="this.style.left='8px'" onblur="this.style.left='-999px'">Saltar al contenido</a>
+
+<!-- INICIO: BARRA DE NAVEGACIÓN -->
+<header class="cabecera">
+  <div class="contenedor">
+    <a class="marca" href="#inicio" aria-label="Junto a Ti, ir al inicio">
+      <!-- CAMBIAR AQUÍ: LOGO (archivo assets/logo/logo.svg) -->
+      <img src="assets/logo/logo.svg" alt="Logo de Junto a Ti">
+      <span><b>JUNTO A TI</b><small>tecnología que acompaña procesos que transforman</small></span>
+    </a>
+    <button class="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <ul>
+        <!-- EDITAR AQUÍ: OPCIONES DEL MENÚ (href debe coincidir con el id de la sección) -->
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="btn peq" href="#" data-abrir="dlg-login" role="button">Iniciar sesión</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- FIN: BARRA DE NAVEGACIÓN -->
+
+<main id="contenido">
+
+<!-- INICIO: SECCIÓN HERO -->
+<section class="hero" id="inicio">
+  <div class="contenedor">
+    <div>
+      <!-- EDITAR AQUÍ: TÍTULO -->
+      <h1>Bienvenido a Junto a Ti</h1>
+      <!-- EDITAR AQUÍ: SUBTÍTULO -->
+      <p class="lema">Tecnología que acompaña procesos que transforman.</p>
+      <!-- EDITAR AQUÍ: DESCRIPCIÓN -->
+      <p class="subtitulo">Somos una plataforma digital creada para apoyar a psicólogos, consultorios y centros de atención psicológica en el seguimiento de sus pacientes, facilitando una atención más personalizada y eficiente.</p>
+      <div class="botones">
+        <!-- EDITAR AQUÍ: BOTONES (texto y destino en href) -->
+        <a class="btn" href="#contacto">Comenzar ahora <svg class="ic" style="width:1.1em;height:1.1em"><use href="#i-arrow"/></svg></a>
+        <a class="btn sec" href="#nosotros">Conocer más</a>
+      </div>
+    </div>
+    <!-- Composición ilustrativa: computador + celular (hecha con HTML/CSS) -->
+    <div class="dispositivos" aria-hidden="true">
+      <div class="laptop">
+        <div class="lado"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="centro">
+          <h4>Hola, Laura</h4><p>Hoy es un buen día para cuidar de ti.</p>
+          <b style="font-size:.7rem;color:var(--azul-oscuro)">Tu progreso emocional</b>
+          <div class="caritas">😄 🙂 😐 🙁 😢</div>
+          <div class="barras"><i style="height:35%"></i><i style="height:55%"></i><i style="height:45%"></i><i style="height:75%"></i><i style="height:60%"></i><i style="height:90%"></i></div>
+        </div>
+      </div>
+      <div class="celular"><img src="assets/logo/logo.svg" alt=""><b>JUNTO A TI</b><small>tecnología que acompaña procesos que transforman</small></div>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN HERO -->
+
+<!-- INICIO: SECCIÓN SOBRE NOSOTROS -->
+<section class="seccion" id="nosotros">
+  <div class="contenedor">
+    <div class="dos-col aparece">
+      <div>
+        <!-- EDITAR AQUÍ: TÍTULO -->
+        <h2>Sobre nosotros</h2>
+        <!-- EDITAR AQUÍ: DESCRIPCIÓN -->
+        <p>En Junto a Ti creemos en el poder de la tecnología para mejorar la salud mental. Somos una empresa colombiana de tecnología aplicada a la psicología, dedicada a desarrollar soluciones digitales que faciliten el seguimiento de los procesos terapéuticos. Trabajamos para psicólogos, consultorios y centros de atención psicológica, brindándoles herramientas que permitan organizar el seguimiento emocional y las actividades de sus pacientes, contribuyendo a una atención más personalizada y eficiente.</p>
+        <a class="btn" href="#mision">Más sobre nosotros <svg class="ic" style="width:1.1em;height:1.1em"><use href="#i-arrow"/></svg></a>
+      </div>
+      <!-- CAMBIAR AQUÍ: IMAGEN (coloque su foto en assets/imagenes/sobre-nosotros.jpg) -->
+      <div class="foto">
+        <img src="assets/imagenes/sobre-nosotros.jpg" alt="Psicóloga atendiendo a una paciente en un consultorio">
+        <span class="falta">Falta la foto: assets/imagenes/sobre-nosotros.jpg</span>
+        <p class="frase manuscrito">Tu bienestar también es nuestra prioridad</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN SOBRE NOSOTROS -->
+
+<!-- INICIO: SECCIÓN MISIÓN Y VISIÓN -->
+<section class="seccion fondo" id="mision" style="padding-block:3rem">
+  <div class="contenedor rejilla g2 mision-vision">
+    <article class="tarjeta aparece">
+      <div class="icono-circulo"><svg class="ic"><use href="#i-target"/></svg></div>
+      <div><h3>Misión</h3>
+      <!-- EDITAR AQUÍ: MISIÓN -->
+      <p>Desarrollar soluciones digitales que faciliten el seguimiento de procesos terapéuticos y contribuyan a una atención más personalizada y eficiente.</p></div>
+    </article>
+    <article class="tarjeta aparece">
+      <div class="icono-circulo"><svg class="ic"><use href="#i-eye"/></svg></div>
+      <div><h3>Visión</h3>
+      <!-- EDITAR AQUÍ: VISIÓN -->
+      <p>Consolidarnos como una empresa reconocida en Córdoba y la región Caribe por ofrecer soluciones tecnológicas innovadoras que apoyan a los profesionales de la psicología.</p></div>
+    </article>
+  </div>
+</section>
+<!-- FIN: SECCIÓN MISIÓN Y VISIÓN -->
+
+<!-- INICIO: SECCIÓN ¿CÓMO FUNCIONA? -->
+<section class="seccion" id="como-funciona">
+  <div class="contenedor">
+    <h2>¿Cómo funciona?</h2>
+    <p class="subtitulo">Una plataforma pensada para ti</p>
+    <div class="rejilla g4">
+      <!-- EDITAR AQUÍ: CADA TARJETA ES UN PASO -->
+      <article class="tarjeta paso aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-userplus"/></svg></div><h3>1. Registro</h3><p>Crea tu cuenta como psicólogo o paciente.</p></article>
+      <article class="tarjeta paso aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-heart"/></svg></div><h3>2. Seguimiento emocional</h3><p>Registra emociones, califica tu estado de ánimo y responde breves cuestionarios.</p></article>
+      <article class="tarjeta paso aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-list"/></svg></div><h3>3. Actividades terapéuticas</h3><p>Accede a ejercicios y tareas personalizadas según tus objetivos.</p></article>
+      <article class="tarjeta paso aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-chart"/></svg></div><h3>4. Reportes y progreso</h3><p>Consulta informes y visualiza avances en tiempo real.</p></article>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN ¿CÓMO FUNCIONA? -->
+
+<!-- INICIO: SECCIÓN EXPLORA LA PLATAFORMA -->
+<section class="seccion" style="padding-top:0" id="plataforma">
+  <div class="contenedor">
+    <div class="explora aparece">
+      <div>
+        <h3>Explora la plataforma</h3>
+        <p style="margin:0">Conoce cómo se ve la experiencia dentro de la plataforma.</p>
+        <p class="manuscrito" style="margin:.5rem 0 0">Pequeños avances, grandes cambios.</p>
+      </div>
+      <div class="botones" style="margin:0">
+        <button class="btn" data-abrir="dlg-paciente">Ver demo paciente</button>
+        <button class="btn sec" data-abrir="dlg-psicologo">Ver demo psicólogo</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN EXPLORA LA PLATAFORMA -->
+
+<!-- INICIO: SECCIÓN COLORES -->
+<section class="seccion fondo" id="colores">
+  <div class="contenedor">
+    <h2>Colores que nos representan</h2>
+    <div class="rejilla g3">
+      <!-- Para cambiar el color de cada círculo, edite las variables en css/estilos.css -->
+      <article class="tarjeta color-tarjeta aparece"><span class="muestra" style="background:var(--azul-oscuro)"></span><div><h3>Azul oscuro</h3><small>Confianza · Seguridad · Profesionalismo</small><p>Representa la responsabilidad y confidencialidad en el ámbito de la psicología.</p></div></article>
+      <article class="tarjeta color-tarjeta aparece"><span class="muestra" style="background:var(--azul-claro)"></span><div><h3>Azul claro</h3><small>Calma · Tranquilidad · Estabilidad</small><p>Refleja el acompañamiento y bienestar durante los procesos terapéuticos.</p></div></article>
+      <article class="tarjeta color-tarjeta aparece"><span class="muestra" style="background:var(--celeste)"></span><div><h3>Celeste</h3><small>Cercanía · Esperanza · Renovación</small><p>Simboliza la posibilidad de avanzar y transformar cada proceso psicológico.</p></div></article>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN COLORES -->
+
+<!-- INICIO: SECCIÓN VALORES -->
+<section class="seccion" id="valores">
+  <div class="contenedor">
+    <h2>Nuestros valores</h2>
+    <div class="rejilla g4">
+      <!-- EDITAR AQUÍ: CADA TARJETA ES UN VALOR (título y descripción) -->
+      <article class="tarjeta valor aparece"><span class="num">01</span><div class="icono-circulo"><svg class="ic"><use href="#i-lock"/></svg></div><h3>Confidencialidad</h3><p>Protegemos la información de los pacientes y garantizamos el manejo responsable de los datos registrados en la plataforma.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">02</span><div class="icono-circulo"><svg class="ic"><use href="#i-heart"/></svg></div><h3>Empatía</h3><p>Diseñamos nuestras soluciones teniendo en cuenta las necesidades de los profesionales y las experiencias de los pacientes.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">03</span><div class="icono-circulo"><svg class="ic"><use href="#i-bulb"/></svg></div><h3>Innovación</h3><p>Buscamos incorporar la tecnología de manera creativa para aportar nuevas herramientas al ejercicio de la psicología.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">04</span><div class="icono-circulo"><svg class="ic"><use href="#i-shieldok"/></svg></div><h3>Responsabilidad</h3><p>Desarrollamos y ofrecemos una herramienta que sirva como apoyo al profesional, reconociendo que la aplicación no reemplaza el criterio ni la intervención del psicólogo.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">05</span><div class="icono-circulo"><svg class="ic"><use href="#i-user"/></svg></div><h3>Profesionalismo</h3><p>Orientamos nuestro trabajo bajo principios relacionados con el ejercicio responsable y ético de la psicología.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">06</span><div class="icono-circulo"><svg class="ic"><use href="#i-shield"/></svg></div><h3>Seguridad</h3><p>Priorizamos la protección de la información y el acceso adecuado a los datos dentro de la plataforma.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">07</span><div class="icono-circulo"><svg class="ic"><use href="#i-users"/></svg></div><h3>Compromiso</h3><p>Trabajamos continuamente para mejorar la herramienta y ofrecer soluciones que respondan a las necesidades de los profesionales de la psicología.</p></article>
+      <article class="tarjeta valor aparece"><span class="num">08</span><div class="icono-circulo"><svg class="ic"><use href="#i-eye"/></svg></div><h3>Transparencia</h3><p>Presentamos la información de manera clara, evitando que los registros de la plataforma sean interpretados como diagnósticos automáticos.</p></article>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN VALORES -->
+
+<!-- INICIO: SECCIÓN EQUIPO -->
+<section class="seccion fondo" id="equipo">
+  <div class="contenedor">
+    <h2>Nuestro equipo</h2>
+    <p class="subtitulo">Detrás de Junto a Ti hay un gran equipo</p>
+    <!-- Nombres tomados de la imagen de referencia. VERIFIQUE ortografía y cargos antes de publicar.
+         Para una FOTO: reemplace <svg class="ic">…</svg> por <img src="assets/imagenes/equipo/nombre.jpg" alt="Nombre"> -->
+    <div class="org-jefe aparece">
+      <!-- EDITAR AQUÍ: DIRECCIÓN ESTRATÉGICA -->
+      <article class="tarjeta persona">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <div><p class="nombre" style="margin:0">Ana Victoria López Murillo</p><p class="cargo" style="margin:0">Dirección estratégica</p></div>
+      </article>
+    </div>
+    <div class="org-linea" aria-hidden="true"></div>
+    <div class="rejilla g5">
+      <!-- EDITAR AQUÍ: CADA TARJETA ES UNA DIRECCIÓN (cargo, nombre y funciones) -->
+      <article class="tarjeta persona aparece">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <p class="cargo">Dirección de Talento y Cultura Organizacional</p>
+        <p class="nombre">Isabella Montesino Martínez</p>
+        <ul><li>Gestión del talento humano</li><li>Selección</li><li>Capacitación</li><li>Bienestar y clima</li><li>Desarrollo</li></ul>
+      </article>
+      <article class="tarjeta persona aparece">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <p class="cargo">Dirección de Producto e Innovación</p>
+        <p class="nombre">Katy Julieth Gómez Tapia</p>
+        <ul><li>Desarrollo y evolución de la plataforma</li><li>Investigación de necesidades</li><li>Coordinación con equipo tecnológico</li></ul>
+      </article>
+      <article class="tarjeta persona aparece">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <p class="cargo">Dirección Administrativa y Financiera</p>
+        <p class="nombre">Paula Andrea Guzmán Rodiño <span class="nota-pendiente">verificar apellido</span></p>
+        <ul><li>Gestión administrativa</li><li>Planificación financiera</li><li>Presupuestos y recursos</li><li>Contratación</li><li>Sostenibilidad</li></ul>
+      </article>
+      <article class="tarjeta persona aparece">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <p class="cargo">Dirección Comercial y Marketing</p>
+        <p class="nombre">Camila Andrea Ruiz Naranjo</p>
+        <ul><li>Marketing y posicionamiento</li><li>Relaciones y alianzas comerciales</li><li>Ventas</li><li>Comunicación y contenido</li></ul>
+      </article>
+      <article class="tarjeta persona aparece">
+        <div class="avatar"><svg class="ic"><use href="#i-user"/></svg></div>
+        <p class="cargo">Dirección de Experiencia del Usuario y Calidad</p>
+        <p class="nombre">María José Hoyos Vega</p>
+        <ul><li>Investigación y evaluación de usuarios</li><li>Análisis de sugerencias</li><li>Mejora continua</li><li>Control de calidad</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN EQUIPO -->
+
+<!-- INICIO: SECCIÓN FUNCIONALIDADES -->
+<section class="seccion" id="funcionalidades">
+  <div class="contenedor">
+    <h2>Nuestras funcionalidades</h2>
+    <div class="func-layout">
+      <div class="rejilla g2">
+        <!-- EDITAR AQUÍ: CADA TARJETA ES UNA FUNCIONALIDAD -->
+        <article class="tarjeta aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-smile"/></svg></div><h3>Seguimiento emocional</h3><p>Registra tu estado de ánimo y emociones en tiempo real.</p></article>
+        <article class="tarjeta aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-list"/></svg></div><h3>Actividades terapéuticas</h3><p>Ejercicios y tareas personalizadas según tus objetivos.</p></article>
+        <article class="tarjeta aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-chart"/></svg></div><h3>Reportes y herramientas</h3><p>Visualiza avances y genera informes.</p></article>
+        <article class="tarjeta aparece"><div class="icono-circulo"><svg class="ic"><use href="#i-chat"/></svg></div><h3>Conexión profesional-paciente</h3><p>Facilita la comunicación y el acompañamiento continuo.</p></article>
+      </div>
+      <!-- Vista ilustrativa del celular (haga clic en una carita) -->
+      <div class="phone-ilus aparece" aria-label="Vista ilustrativa de la aplicación en un celular">
+        <h4>Hola, Laura</h4>
+        <p>¿Cómo te sientes hoy?</p>
+        <div class="moods" role="group" aria-label="Estado de ánimo de ejemplo">
+          <button data-estado="muy bien" aria-label="Muy bien">😄</button><button data-estado="bien" aria-label="Bien">🙂</button><button data-estado="regular" aria-label="Regular">😐</button><button data-estado="mal" aria-label="Mal">🙁</button><button data-estado="muy mal" aria-label="Muy mal">😢</button>
+        </div>
+        <div class="mood-msg" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN FUNCIONALIDADES -->
+
+<!-- INICIO: SECCIÓN TESTIMONIOS -->
+<section class="seccion fondo" id="testimonios">
+  <div class="contenedor">
+    <h2>Lo que dicen nuestros usuarios</h2>
+    <div class="carrusel-wrap">
+      <div class="carrusel"><div class="pista">
+        <!-- EDITAR AQUÍ: TESTIMONIOS. Los siguientes son EJEMPLOS ILUSTRATIVOS, no testimonios reales.
+             Cuando tenga testimonios reales y autorizados, reemplácelos y borre la etiqueta "ej". -->
+        <figure class="diapo" style="margin:0"><blockquote><span class="ej">Ejemplo ilustrativo, no es un testimonio real</span><p>«Junto a Ti me ha ayudado a organizar mejor el seguimiento de mis pacientes y a tener una visión más clara de su progreso. Es una herramienta muy completa y fácil de usar.»</p><footer><b>Daniela Rojas</b> · Psicóloga</footer></blockquote></figure>
+        <figure class="diapo" style="margin:0"><blockquote><span class="ej">Ejemplo ilustrativo, no es un testimonio real</span><p>«Me encanta poder registrar mis emociones y ver mi avance. Me siento más acompañada y motivada en mi proceso.»</p><footer><b>Valentina Torres</b> · Paciente</footer></blockquote></figure>
+        <figure class="diapo" style="margin:0"><blockquote><span class="ej">Ejemplo ilustrativo, no es un testimonio real</span><p>«Texto de ejemplo: aquí irá la opinión de un consultorio o centro de atención psicológica.»</p><footer><b>Nombre pendiente</b> · Cargo pendiente</footer></blockquote></figure>
+      </div></div>
+      <div class="carrusel-ctrl">
+        <button class="flecha ant" aria-label="Testimonio anterior">‹</button>
+        <div class="puntos"></div>
+        <button class="flecha sig" aria-label="Testimonio siguiente">›</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FIN: SECCIÓN TESTIMONIOS -->
+
+</main>
+
+<!-- INICIO: CONTACTO Y PIE DE PÁGINA -->
+<footer class="pie" id="contacto">
+  <div class="contenedor">
+    <div class="pie-grid">
+      <div>
+        <a class="marca" href="#inicio"><img src="assets/logo/logo.svg" alt="Logo de Junto a Ti"><span><b>JUNTO A TI</b><small>tecnología que acompaña procesos que transforman</small></span></a>
+        <!-- EDITAR AQUÍ: FRASE CORPORATIVA -->
+        <p class="manuscrito" style="margin-top:1rem">Juntos por una salud mental más accesible.</p>
+      </div>
+      <div><h4>Navegación</h4>
+        <ul><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#funcionalidades">Funcionalidades</a></li><li><a href="#valores">Valores</a></li><li><a href="#equipo">Equipo</a></li></ul>
+      </div>
+      <div><h4>Síguenos</h4>
+        <!-- CAMBIAR AQUÍ: ENLACES DE REDES (reemplace href="#" por su URL real, p. ej. https://www.instagram.com/su_usuario) -->
+        <ul><li><a href="#" aria-label="Instagram de Junto a Ti">Instagram</a> <span class="nota-pendiente">pendiente</span></li><li><a href="#" aria-label="LinkedIn de Junto a Ti">LinkedIn</a> <span class="nota-pendiente">pendiente</span></li><li><a href="#" aria-label="Facebook de Junto a Ti">Facebook</a> <span class="nota-pendiente">pendiente</span></li></ul>
+      </div>
+      <div><h4>Contacto</h4>
+        <!-- CAMBIAR AQUÍ: CORREO (use href="mailto:su@correo.com") -->
+        <ul><li><svg class="ic" style="width:1em;height:1em"><use href="#i-mail"/></svg> <a href="#contacto">[Correo pendiente]</a></li>
+        <!-- CAMBIAR AQUÍ: WHATSAPP (use href="https://wa.me/57NUMERO") -->
+        <li><svg class="ic" style="width:1em;height:1em"><use href="#i-chat"/></svg> <a href="#contacto">[WhatsApp pendiente]</a></li>
+        <li><svg class="ic" style="width:1em;height:1em"><use href="#i-pin"/></svg> Córdoba, Colombia</li></ul>
+      </div>
+    </div>
+    <div class="copy"><span>© <span class="anio">2026</span> Junto a Ti. Todos los derechos reservados.</span><span>Córdoba, Colombia</span></div>
+  </div>
+</footer>
+<!-- FIN: CONTACTO Y PIE DE PÁGINA -->
+
+<button class="subir" aria-label="Volver arriba">↑</button>
+
+<!-- INICIO: VENTANA INICIAR SESIÓN (aviso temporal, no hay autenticación) -->
+<dialog id="dlg-login" aria-labelledby="t-login"><div class="dlg">
+  <button class="cerrar" data-cerrar aria-label="Cerrar">×</button>
+  <h3 id="t-login">Plataforma en desarrollo</h3>
+  <p>El inicio de sesión aún no está disponible. Estamos construyendo la plataforma y te avisaremos cuando esté lista.</p>
+  <button class="btn" data-cerrar>Entendido</button>
+</div></dialog>
+
+<!-- INICIO: DEMO PACIENTE (ilustrativa; no guarda datos) -->
+<dialog id="dlg-paciente" class="ancho" aria-labelledby="t-pac"><div class="dlg">
+  <button class="cerrar" data-cerrar aria-label="Cerrar">×</button>
+  <div class="aviso-demo">Demostración ilustrativa con datos ficticios. No se guarda información.</div>
+  <h3 id="t-pac">Hola, Laura (paciente de ejemplo)</h3>
+  <p>¿Cómo te sientes hoy?</p>
+  <div class="moods" style="max-width:320px"><button data-estado="muy bien">😄</button><button data-estado="bien">🙂</button><button data-estado="regular">😐</button><button data-estado="mal">🙁</button><button data-estado="muy mal">😢</button></div>
+  <div class="mood-msg" aria-live="polite"></div>
+  <h4>Tu semana (ejemplo)</h4>
+  <div class="demo-grafica" aria-hidden="true"><i style="height:40%"></i><i style="height:55%"></i><i style="height:50%"></i><i style="height:70%"></i><i style="height:65%"></i><i style="height:85%"></i><i style="height:80%"></i></div>
+  <h4 style="margin-top:1rem">Actividades de hoy</h4>
+  <div class="tareas"><label><input type="checkbox"> Respiración consciente (5 min)</label><label><input type="checkbox"> Escribir tres cosas positivas del día</label><label><input type="checkbox"> Caminata corta</label></div>
+</div></dialog>
+
+<!-- INICIO: DEMO PSICÓLOGO (ilustrativa; no guarda datos) -->
+<dialog id="dlg-psicologo" class="ancho" aria-labelledby="t-psi"><div class="dlg">
+  <button class="cerrar" data-cerrar aria-label="Cerrar">×</button>
+  <div class="aviso-demo">Demostración ilustrativa con datos ficticios. No se guarda información.</div>
+  <h3 id="t-psi">Panel del profesional (ejemplo)</h3>
+  <div class="lista-pac">
+    <div class="fila-pac"><span>🙂</span><span>Paciente A</span><span class="estado">Al día</span></div>
+    <div class="fila-pac"><span>😐</span><span>Paciente B</span><span class="estado">1 actividad pendiente</span></div>
+    <div class="fila-pac"><span>😄</span><span>Paciente C</span><span class="estado">Al día</span></div>
+  </div>
+  <h4 style="margin-top:1rem">Evolución del estado de ánimo (ejemplo)</h4>
+  <div class="demo-grafica" aria-hidden="true"><i style="height:35%"></i><i style="height:45%"></i><i style="height:40%"></i><i style="height:60%"></i><i style="height:70%"></i><i style="height:68%"></i><i style="height:82%"></i></div>
+  <p style="font-size:.82rem;color:var(--texto-suave)">Los registros son un apoyo para el profesional y no constituyen un diagnóstico automático.</p>
+</div></dialog>
+
+<script src="js/script.js"></script>
+</body>
+</html>
